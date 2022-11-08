@@ -38,14 +38,21 @@ Hence,  W$_1$ = This, W$_2$ = is, W$_3$ = great and so on...
 Let us represent the sequence of words as W$_s^e$ where s represent the starting index and e represent the ending index of the words in the corpus. So,
 
 W$_1^m$ = W$_1$ W$_2$ W$_3$ ....................  W$_{m-1}$ W$_m$
-\\
+
 Similarly,  W$_1^3$ = W$_1$ W$_2$ W$_3$ = This is great
 
-\section{Uni-gram Probability}
+\section{N-gram Probability}
+N-gram probability is the probability of the occurrence of the sequence of N-words in a corpus. From uni-gram, bi-gram  and tri-gram probability, we can deduce for N-gram probability denoted by $P(W_N | W_1^{N-1})$ as
+
+\begin{equation}
+	P(W_N | W_1^{N-1}) = \frac{C(W_1^{N - 1} \, W_N)}{C(W_1^{N - 1})} = \frac{C(W_1^N)}{C(W_1^{N - 1})}
+\end{equation}
+
+\subsection{Uni-gram Probability}
 Uni-gram Probability is the probability of occurrence of a word in a given corpus.
-\\
+
 \textbf{Corpus :} I am happy because I am learning.
-\\
+
 \textbf{Size of corpus : } m = 7
 \begin{equation}
 	P(I) = \frac{2}{7}
@@ -60,7 +67,7 @@ Hence, we can see that Probability of uni-gram is given by:
 \end{equation}
 where C(w) = frequency of the word in the corpus
 
-\section{Bi-gram Probability}
+\subsection{Bi-gram Probability}
 Bi-gram Probability is the probability of occurrence of sequence of two words in a corpus.
 \\
 \textbf{Corpus :} I am happy because I am learning.
@@ -82,7 +89,7 @@ Hence, we can see that Probability of bi-gram is given by:
 \end{equation}
 where C(w) = frequency of the word in the corpus
 
-\section{Tri-gram Probability}
+\subsection{Tri-gram Probability}
 Tri-gram Probability is the probability of the occurrence of the sequence of three words in a corpus.
 \\
 \textbf{Corpus :} I am happy because I am learning.
@@ -98,12 +105,7 @@ Hence, we can see that Probability of bi-gram is given by:
 \end{equation}
 where C(w) = frequency of the word in the corpus
 
-\section{N-gram Probability}
-N-gram probability is the probability of the occurrence of the sequence of N-words in a corpus. From uni-gram, bi-gram  and tri-gram probability, we can deduce for N-gram probability denoted by $P(W_N | W_1^{N-1})$ as
 
-\begin{equation}
-	P(W_N | W_1^{N-1}) = \frac{C(W_1^{N - 1} \, W_N)}{C(W_1^{N - 1})} = \frac{C(W_1^N)}{C(W_1^{N - 1})}
-\end{equation}
 
 \section{Probability of a sequence}
 From the conditional probability and chain rule, we have
@@ -324,9 +326,112 @@ The recommended split of corpus into train, validation and test data is as follo
 	\label{tab:TVT Split}
 \end{table}
 
-\section{Perplexity}
+\section{Language Model Evaluation}
+We can use two different approaches to evaluate and compare language models:
+
+\subsection{Extrinsic evaluation}
+This involves evaluating the models by employing them in an actual task (such as machine translation) and looking at their final loss/accuracy. This is the best option as it\textquotesingle s the only way to tangibly see how different models affect the task we\textquotesingle re interested in. However, it can be computationally expensive and slow as it requires training a full system.
+
+\subsection{Intrinsic evaluation}
+This involves finding some metric to evaluate the language model itself, not taking into account the specific tasks it\textquotesingle s going to be used for. While intrinsic evaluation is not as “good” as extrinsic evaluation as a final metric, it\textquotesingle s a useful way of quickly comparing models. Perplexity is an intrinsic evaluation method.
+
+\subsection{Perplexity}
+Perplexity is an evaluation metric for language models. For better language model, perplexity value should be smaller. Perplexity can be calculated as follow:
+
+\begin{equation}
+	PP(W) = P(s_1, s_2, s_3, s_4, ..........., s_m)^{\frac{-1}{m}}
+\end{equation}
+
+where,
+
+\textbf{W} = test set containing m sentences s
+
+\textbf{$S_i$} = $i^{th}$ sentence in the test set, each ending with $\langle /s \rangle$
+
+\textbf{m} = number of all words in entire test set \textbf{W} including $\langle /s \rangle$ but not including $\langle s \rangle$
+
+Similarly, Perplexity for the bi-gram model can be calculated as:
+
+\begin{equation}
+	PP(W) = \sqrt[m]{\prod_{i = 1}^{m} \prod_{j = 1}^{|S_i|} \frac{1}{P(w_j^{(i)} | w_{j - 1}^{(i)})}}
+\end{equation}
+
+where,
+$w_j^{(i)}$ = $j^{th}$ word in $i^{th}$ sentence
+
+If we concatenate all the sentences in W, we can get perplexity as
+
+\begin{equation}\label{perplexity}
+	PP(W) = \sqrt[m]{\prod_{i = 1}^{m} \frac{1}{P(w_i | w_{i - 1})}}
+\end{equation}
+
+where, $w_i$ = $i^{th}$ word in test set
+
+\subsection{Log Perplexity}
+Log perplexity is calculated by taking logarithm on both sides of equation (\ref{perplexity}) and we get
+
+\begin{equation}
+	logPP(W) = \frac{-1}{m} \sum_{i = 1}^{m} log_2 (P(w_i | w_{i - 1}))
+\end{equation}
+
+\section{Vocabulary}
+Vocabulary is a set of words from the training corpus. We can create vocabulary from training corpus using following criteria.
+
+\begin{enumerate}
+	\item Min word frequency f
+	\item Max $|V|$, include words by frequency
+	\item Using $\langle UNK \rangle$ for unknown token
+\end{enumerate}
+
+For example: Suppose our corpus is as follow
+
+$\langle s \rangle$ Lyn drinks chocolate $\langle /s \rangle$
+
+$\langle s \rangle$ John drinks tea $\langle /s \rangle$
+
+$\langle s \rangle$ Lyn eats chocolate $\langle /s \rangle$
+
+let min frequency to be added in vocabulary be f = 2. So, now corpus will be as follow:
 
 
+$\langle s \rangle$ Lyn drinks chocolate $\langle /s \rangle$
 
+$\langle s \rangle$ $\langle UNK \rangle$ drinks $\langle UNK \rangle$ $\langle /s \rangle$
 
+$\langle s \rangle$ Lyn $\langle UNK \rangle$ chocolate $\langle /s \rangle$
+
+Hence, vocabulary = $\{Lyn, drinks, chocolate\}$
+
+Suppose,
+
+\textbf{Input Query : } $\langle s \rangle$ Adam drinks chocolate $\langle /s \rangle$
+
+So, the input query after processing becomes
+
+\textbf{Ouput : }$\langle s \rangle$ $\langle UNK \rangle$ drinks chocolate $\langle /s \rangle$
+
+In this way, vocabulary can be created and unknown words can be handled.
+
+\section{Missing N-gram in training corpus}
+N-grams made of known words still might be missing in the training corpus. N-gram probability is given as:
+
+\begin{equation}\label{prob1}
+	P(w_n | w_{n - N + 1}^{n - 1}) = \frac{C(w_{n - N + 1}^{n - 1}, w_n)}{C(w_{n - N + 1}^{n - 1})}
+\end{equation}
+
+In equation (\ref{prob1}), both $C(w_{n - N + 1}^{n - 1}, w_n)$ and $C(w_{n - N + 1}^{n - 1})$ can be 0 in the probability matrix which causes the probability to be indefinite. It can be solved by using smoothing.
+
+\subsection{Laplacian Smoothing}
+In Laplacian smoothing, probability is calculated as follow:
+
+\begin{equation}
+	P(w_n | w_{n - 1}) = \frac{C(w_{n - 1}, w_n) + 1}{C(w_{n - 1}) + V}
+\end{equation}
+
+\subsection{K-smoothing}
+In K-smoothing, probability is calculated as follow
+
+\begin{equation}
+	P(w_n | w_{n - 1}) = \frac{C(w_{n - 1}, w_n) + K}{C(w_{n - 1}) + k * V}
+\end{equation}
 
