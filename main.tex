@@ -1,5 +1,13 @@
 \documentclass[a4paper, 12pt]{report}
 
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=0.75in,
+            right=0.52in,
+            top=0.75in,
+            bottom=1.44in,
+            footskip=.25in]{geometry}
+
 \usepackage{graphicx} % to add images
 \graphicspath{{image/}} % specify the path for images
 
@@ -12,5 +20,6 @@
 
 \begin{document}
 \include{title}
+\include{chapter/chapter_2}
 \include{chapter/chapter_3}
 \end{document}
