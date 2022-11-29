@@ -102,20 +102,121 @@ The forget gate is a tensor containing values between 0 and 1. If a unit in the 
 where,
 \begin{itemize}
     \item $W_f$ = forget gate weight $W_f$
-    \item $b_f$ = forget gate bias $b_f$ 
+    \item $b_f$ = forget gate bias $b_f$
     \item $\Gamma _f ^ {<t>}$ = Forget Gate
 \end{itemize}
 
 Explanation of the equation:
-\begin{enumerate}
+\begin{itemize}
     \item $W_f$ contains the weights that govern the forget gate\textquotesingle s behavior.
     \item The previous time step's hidden state $a^{<t - 1>}$  and current time step's input $x^{<t>}$ are concatenated together and multiplied by $W_f$.
     \item A sigmoid function is used to make each of the gate tensor's values $\Gamma _f ^ {<t>}$ range from 0 to 1.
     \item The forget gate $\Gamma _f ^ {<t>}$
-    has the same dimensions as the previous cell state $c^{<t - 1>}$.
+          has the same dimensions as the previous cell state $c^{<t - 1>}$.
     \item Multiplying the tensors $\Gamma _f ^ {<t>}$ * $c^{<t - 1>}$
- is like applying a mask over the previous cell state.
+          is like applying a mask over the previous cell state.
     \item If a single value in $\Gamma _f ^ {<t>}$ is 0 or close to 0, then the product is close to 0. This keeps the information stored in the corresponding unit in $c^{<t - 1>}$ from being remembered for the next time step.
     \item Similarly, if one value is close to 1, the product is close to the original value in the previous cell state. The LSTM will keep the information from the corresponding unit of $c^{<t - 1>}$, to be used in the next time step.
-\end{enumerate}
+\end{itemize}
+
+\subsubsection{Candidate Value $\tilde{c}^{<t>}$}
+The candidate value is a tensor containing information from the current time step that may be stored in the current cell state $c^{<t>}$. The parts of the candidate value that get passed on depend on the update gate.
+The candidate value is a tensor containing values that range from -1 to 1.
+The tilde "~" is used to differentiate the candidate $\tilde{c}^{<t>}$ from the cell state $c^{<t>}$.
+
+\begin{equation}
+    \tilde{c}^{<t>} = tanh(W_c[a^{<t - 1>}, x^{<t>}] + b_c)
+\end{equation}
+
+\subsubsection{Update Gate $\Gamma _i$}
+Update gate can be used to decide what aspects of the candidate $\tilde{c}^{<t>}$ to add to the cell state $c^{<t>}$. The update gate is a tensor containing values between 0 and 1. When a unit in the update gate is close to 1, it allows the value of the candidate $\tilde{c}^{<t>}$ to be passed onto the hidden state $c^{<t>}$. When a unit in the update gate is close to 0, it prevents the corresponding value in the candidate from being passed onto the hidden state.
+
+\begin{equation}
+    \Gamma _i ^ {<t>} = \sigma (W_i[a^{<t - 1>}, x^{<t>}] + b_i)
+\end{equation}
+
+Explanation of the equation:
+\begin{itemize}
+    \item Similar to the forget gate, here $\Gamma _i ^{<t>}$
+          , the sigmoid produces values between 0 and 1.
+    \item The update gate is multiplied element-wise with the candidate, and this product $\Gamma _i ^{<t>}$ * $\tilde{c}^{<t>}$ is used in determining the cell state $c^{<t>}$.
+\end{itemize}
+
+\subsubsection{Cell State $c^{<t>}$}
+The cell state is the "memory" that gets passed onto future time steps.
+The new cell state $c^{<t>}$ is a combination of the previous cell state and the candidate value.
+
+\begin{equation}
+    c^{<t>} = \Gamma _f ^{<t>} * c^{<t - 1>} + \Gamma _i ^{<t>} * \tilde{c}^{<t>}
+\end{equation}
+
+Explanation of the equation
+\begin{itemize}
+    \item The previous cell state $c^{<t - 1>}$
+          is adjusted (weighted) by the forget gate $\Gamma _f ^{<t>}$.
+    \item the candidate value $\tilde{c}^{<t>}$ is adjusted (weighted) by the update gate $\Gamma _i ^{<t>}$.
+\end{itemize}
+
+\subsubsection{Output Gate $\Gamma _o$}
+The output gate decides what gets sent as the prediction (output) of the time step. The output gate is like the other gates, in that it contains values that range from 0 to 1.
+
+\begin{equation}
+    \Gamma _o ^ {<t>} = \sigma (W_o[a^{<t - 1>}, x^{<t>}] + b_o)
+\end{equation}
+
+Explanation of the equation
+\begin{itemize}
+    \item The output gate is determined by the previous hidden state $a^{<t - 1>}$ and the current input $x^{t}$
+    \item The sigmoid makes the gate range from 0 to 1.
+\end{itemize}
+
+\subsubsection{Hidden State $a^{<t>}$}
+The hidden state gets passed to the LSTM cell's next time step. It is used to determine the three gates ($\Gamma _f , \Gamma _u , \Gamma _o $) of the next time step. The hidden state is also used for the prediction $y^{<t>}$.
+
+\begin{equation}
+    a^{<t>} = \Gamma _o ^{<t>} * tanh(c^{<t>})
+\end{equation}
+
+Explanation of the equation
+\begin{itemize}
+    \item The hidden state $a^{<t>}$
+          is determined by the cell state $c^{<t>}$
+          in combination with the output gate $\Gamma _o$.
+    \item The cell state state is passed through the tanh function to rescale values between -1 and 1.
+    \item The output gate acts like a "mask" that either preserves the values of tanh($c^{<t>}$) or keep those values from being included in the hidden state $a^{<t>}$.
+\end{itemize}
+
+\subsubsection{Prediction $y_{pred}^{<t>}$}
+The prediction in this use case is a classification, so you'll use a softmax.
+
+\begin{equation}
+    y_{pred}^{<t>} = softmax(W_y a^{<t>} + b_y)
+\end{equation}
+
+\section{Bidirectional RNNs}
+A typical state in an RNN (simple RNN, GRU, or LSTM) relies on the past and the present events. A state at time t depends on the states $x_1$, $x_2$, ...., $x_{t - 1}$ and $x_{t}$. However, there can be situations where a prediction depends on the past, present, and future events.
+
+For example, predicting a word to be included in a sentence might require us to look into the future, i.e., a word in a sentence could depend on a future event. Such linguistic dependencies are customary in several text prediction tasks.  
+
+Thus, capturing and analyzing both past and future events is helpful in the above-mentioned scenarios.
+
+To enable straight (past) and reverse traversal of input (future), Bidirectional RNNs, or BRNNs, are used. A BRNN is a combination of two RNNs - one RNN moves forward, beginning from the start of the data sequence, and the other, moves backward, beginning from the end of the data sequence. The network blocks in a BRNN can either be simple RNNs, GRUs, or LSTMs.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.6]{BRNNs.png}
+    \caption{Bidirectional RNN}
+    \label{fig:BRNN}
+\end{figure}
+
+\section{Sequence Modelling Applications}
+Some applications of sequence modelling are:
+\begin{itemize}
+    \item \textbf{Language Modelling} : Auto-generation of next probable word.(Previous sequence of words are sequential data)
+    \item \textbf{Image Captioning} (with the help of computer vision): Generating captions for images. (captions are sequential data)
+    \item \textbf{Video Frame Prediction} (with the help of computer vision): Predict the subsequent frames of video given the previous ones. (the frames in a video are sequential in nature)
+    \item \textbf{Classifying songs} (audio) as Jazz, Rock , Pop etc (genre). Here, audio is of sequential nature.
+    \item \textbf{Composing Music} (music is sequential in nature)
+\end{itemize}
+
 
