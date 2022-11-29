@@ -4,3 +4,11 @@
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Glove Model}}{9}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Language Model for Auto-complete}}{11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Recurrent Neural Networks}}{21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An unrolled recurrent neural networks}}{21}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Short Sequence in RNNs}}{22}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Long Sequence in RNNs}}{22}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The repeating module in a standard RNN contains a single layer.}}{23}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The repeating module in an LSTM contains four interacting layers.}}{24}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces LSTM Cell}}{24}%
