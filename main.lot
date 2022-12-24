@@ -1,8 +1,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Count Matrix for bi-gram model}}{20}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Count Matrix for bi-gram model with row-sum}}{20}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Probability Matrix for bi-gram model}}{21}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Train, Validation and Test Split}}{22}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Count Matrix for bi-gram model}}{22}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Count Matrix for bi-gram model with row-sum}}{22}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Probability Matrix for bi-gram model}}{23}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Train, Validation and Test Split}}{24}%
 \addvspace {10\p@ }
