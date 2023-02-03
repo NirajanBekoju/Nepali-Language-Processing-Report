@@ -152,6 +152,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.aux
@@ -164,6 +166,10 @@ INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Proces
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/introduction.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Literature_review.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Literature_review.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/requirement_analysis.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/requirement_analysis.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/system_design_archi.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/system_design_archi.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Tokenization.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Tokenization.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/chapter_2.aux
@@ -197,20 +203,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.toc
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.toc
-OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.toc
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.lof
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.lof
-OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.lof
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.lot
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.lot
-OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.lot
 OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/content.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/content.tex
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/content.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.toc
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.toc
 OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/main.toc
@@ -229,6 +226,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/word_cloud.png
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/word_cloud.png
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/word_cloud.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/agile.jpg
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/agile.jpg
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/agile.jpg
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/text_generation.png
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/text_generation.png
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/text_generation.png
@@ -252,6 +252,27 @@ INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Proces
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/literature_review/multi_head_attention.png
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/literature_review/multi_head_attention.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/requirement_analysis.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/requirement_analysis.tex
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/requirement_analysis.tex
+OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/system_design_archi.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/system_design_archi.tex
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/system_design_archi.tex
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/use_case.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/use_case.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/use_case.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/word_embedding.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/word_embedding.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/word_embedding.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/sentimental_classification.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/sentimental_classification.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/sentimental_classification.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/language_model.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/language_model.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/language_model.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/Spelling correction.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/Spelling correction.png
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/image/system_design/Spelling correction.png
 OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Tokenization.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Tokenization.tex
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Tokenization.tex
@@ -315,6 +336,10 @@ INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Proces
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/introduction.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Literature_review.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Literature_review.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/requirement_analysis.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/requirement_analysis.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/system_design_archi.aux
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/system_design_archi.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Tokenization.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/Tokenization.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Minor Project Proposal/chapter/chapter_2.aux
