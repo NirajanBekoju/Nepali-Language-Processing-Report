@@ -1,0 +1,34 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=0.75in,
+            right=0.52in,
+            top=0.75in,
+            bottom=1.44in,
+            footskip=.25in]{geometry}
+
+\usepackage{graphicx} % to add images
+\graphicspath{{image/}} % specify the path for images
+
+\usepackage{mathtools} % For multi-line mathematical equation
+\usepackage{mathtools} 
+\usepackage{amsmath} 
+\usepackage{tikz} % for rectangle
+\usepackage[parfill]{parskip} % for new line between paragraphs and no indentation in first line of paragraph
+\usepackage{float} % to prevent from repositioning the table
+\usepackage{enumitem}
+
+\begin{document}
+\include{title}
+\include{content}
+\include{chapter/introduction}
+\include{chapter/Literature_review}
+\include{chapter/requirement_analysis}
+\include{chapter/system_design_archi}
+\include{chapter/Tokenization}
+\include{chapter/chapter_2}
+\include{chapter/chapter_3}
+\include{chapter/chapter_5}
+
+\end{document}

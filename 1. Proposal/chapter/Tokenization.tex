@@ -1,0 +1,51 @@
+\chapter{Tokenization}
+\section{Introduction}
+Tokenization is the process of representing raw text in smaller units called tokens. These tokens can then be mapped with numbers to further feed to an NLP model. In deep learning, tokenization is the process of converting a sequence of characters into a sequence of tokens which further needs to be converted into a sequence of numerical vectors that can be processed by a neural network.
+
+\section{Different ways to tokenize}
+To make the deep learning model learn from the text, we need a two-step process:
+\begin{enumerate}
+    \item Tokenize - decide the algorithm we\textquotesingle ll use to generate the tokens
+    \item Encode the tokens into vectors
+\end{enumerate}
+
+\subsection{Word-based Tokenization}
+A simple and straightforward method that can be proposed is to use word-base tokens, splitting the text by spaces.
+
+However, the problem with word base tokenization is there is a high risk of missing words in the training data. With word tokens, the variants of words that were not part of the data on which the model was trained won\textquotesingle t be recognized. For example: if the model has seen “foot” and “ball” in the training data but the final text has football, the model won\textquotesingle t be able to recognize the word and it will be treated as $\langle UNK \rangle$ token.
+
+So to fix this problem with word-based tokenization, huge vocabulary with every variant of the word will be required which is not always possible. Lemmatization can solve but it will need an extra step in the processing pipeline. 
+
+Moreover, for a language like Chinese which doesn\textquotesingle t use spaces for word separation, this tokenization will fail completely.
+
+\subsection{Character-based tokenization}
+To resolve the problems associated with word-based tokenization, data scientists tried an alternative approach of character-by-character tokenization. This did solve the problem of missing words, as now characters that can be encoded using ASCII or Unicode are being used. 
+
+But the problem with this tokenization is that this approach requires more computing resources. It treats each character as a token and hence more tokens means more input computations to process each token which in turn requires more computation resources.
+
+Also, there is a risk of learning incorrect semantics. Working with characters could generate incorrect spellings of words. Also, with no inherent meaning, learning with characters is like learning with no meaningful semantics.
+
+\subsection{Subword Tokenization}
+With character-based models, we risk losing the semantic features of the word. And with word-based tokenization, we  need a very large vocabulary to encompass all the possible variations of every word. So, the goal was to develop an algorithm that could:
+
+\begin{enumerate}
+    \item Retain the semantic features of the token, that is information per token.
+    \item Tokenize without demanding a very large vocabulary with a finite set of words.
+\end{enumerate}
+
+To solve this problem, we can think of breaking down the words based on the set of prefixes and suffixes. For example, we can write a rule-based system to identify words like \textquotedblleft \#\#s \textquotedblright, \textquotedblleft \#\#ing\textquotedblright , \textquotedblleft \#\#ify\textquotedblright , \textquotedblleft un\#\#\textquotedblright and so on, where the position of the double hash denotes prefixes and suffixes.
+
+The problem with the subword tokenization is that some of the subwords that are created as per the defined rules may never appear in the text to tokenize and may end up occupying extra memory. Also, for every language we\textquotesingle ll need to define a different set of rules to create subwords. To alleviate this problem, most modern tokenizers have a training phase that identifies the recurring text in the input corpus and creates new subword tokens.
+
+\section{Byte Pair Encoding (BPE) Algorithm}
+BPE was originally a data compression algorithm that is used to find the best way to represent data by identifying the common byte pairs. Now, it is used in NLP to find the best representation of text using the smallest number of tokens.
+
+The working algorithm of the BPE algorithm is as follow:
+\begin{enumerate}
+    \item Add an identifier $\langle /w \rangle$ at the end of each word to identify the end of a word and then calculate the word frequency in the text.
+    \item Split the word into characters and then calculate the character frequency.
+    \item From the character tokens, for a predefined number of iterations count the frequency of the consecutive byte pairs and merge the most frequently occurring byte pairings.
+    \item Keep iterating until you have reached the iteration limit or until you have reached the token limit.
+\end{enumerate}
+
+

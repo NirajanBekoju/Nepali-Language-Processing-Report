@@ -1,0 +1,38 @@
+\chapter{In Progress Task}
+\section{Context Based Spelling Correction}
+Noisy channel model is going to be used for the development of spelling correction model. The channel model is trained based on Brill and Moore model using unsupervised data from corpus. The transformer based language model will be use to deterine the prior function. The candidate sentences is found using minimum edit distance based on following equation. Then the word that maximizes the channel model and prior is chosen.
+
+\begin{equation}
+    \hat{w} = \arg \max_{w \in C} P(x | w) P (w)
+\end{equation}
+
+here, P(x $|$ w) = channel model and P(w) = prior
+
+\section{Frontend}
+Remaining frontend works like home page design, frontend for transformer based language model and spelling correction system will be done in later week. Moreover, improvement in UI/UX will also be explored and improved.
+
+For sentimental classification frontend, the progress bar for probability of the sentence belonging to the positive, negative or neutral class will be displayed.
+
+There might be various other improvements as per required.
+
+\section{Time Estimation}
+The estimated time for remaining task are as follow:
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c| c| c|}
+        \hline
+        SN & Remaining Tasks & Estimated Time \\
+        \hline
+        1 & Frontend & 7 Days \\
+        \hline
+        2 & Spelling Correction System & 3 Days \\
+        \hline
+        3 & Backend & 2 Days \\
+        \hline
+        4 & Debugging and Testing & 7 Days \\
+        \hline
+    \end{tabular}
+    \caption{Time Estimation for remaining tasks}
+    \label{tab:Time Estimation for remaining tasks}
+\end{table}
