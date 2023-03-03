@@ -11,6 +11,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
@@ -222,8 +224,6 @@ INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Proces
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/sentimental_classification.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/progress_task.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/progress_task.aux
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/references.aux
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/references.aux
 OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/main.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -464,9 +464,8 @@ INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Proces
 OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/progress_task.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/progress_task.tex
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/progress_task.tex
-OUTPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/references.aux
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/references.tex
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/references.tex
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/main.bbl
+INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/main.bbl
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/main.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/title.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/title.aux
@@ -494,8 +493,6 @@ INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Proces
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/sentimental_classification.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/progress_task.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/progress_task.aux
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/references.aux
-INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/chapter/references.aux
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/main.out
 INPUT /media/nirajan/cea4c185-1562-436a-bf0b-3d5b8338414e/Nepali Language Processing - Minor Project/Report/2. Progress Report/main.out
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
