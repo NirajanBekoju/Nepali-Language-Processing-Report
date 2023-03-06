@@ -1,0 +1,68 @@
+\chapter{Methodology, Result and Evaluation}
+\section{Word Embedding Visualization}
+Word embeddings vectors were created using gensim word2vec model. Then the obtained 300 dimensional word embeddings vectors were converted into 2-dimensional and 3-dimensional vectors using Principal Component Analysis (PCA). The result obtained using the first 50 vectors were as follow:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.4]{completed_task/2d.png}
+	\caption{2d plot of word embeddings vectors}
+	\label{fig:2d plot of word embeddings vectors}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.5]{completed_task/3d.png}
+	\caption{3d plot of word embeddings vectors}
+	\label{fig:3d plot of word embeddings vectors}
+\end{figure}
+
+
+\section{Probabilistic Language Model}
+For the development of a probabilistic language model, at first vocabulary was created from the training dataset. At first, the corpus was split into a list of sentences. Text preprocessing involves:
+
+\begin{enumerate}
+    \item remove all non-devanagari letters
+    \item remove numbers from the corpus
+\end{enumerate}
+
+
+Then word tokenization was created which was used to create vocabulary from the tokenized word using the constraints of minimum frequency. Then, the n-gram count list was generated in which the count of various n-grams were stored. For the creation of our moder, unigram, bigram, trigram, 4-gram and 5-gram were created. Among these, the unigram, bigram and trigram performed better. 
+
+Hence, we used only unigram, bigram and trigram for the probability estimation of the next word.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.3]{completed_task/probabilistic_lm.png}
+	\caption{Next word prediction using Probabilistic LM}
+	\label{fig:Next word prediction using Probabilistic LM}
+\end{figure}
+
+\section{Transformer based language model}
+For this language model too, the vocabulary was created using the same method as in the Probabilistic language model. Then the transformer architecture with 4 multi-head attention and 4 encoder layers were developed for language model training. Cross Entropy loss was used as a loss function and SGD was used as an optimizing function. The perplexity obtained is 568.5.
+
+Input to the LM is current words and  num\textunderscore words to be predicted. Then the language model generate probable num\textunderscore words as shown in fig: \ref{fig:Next word prediction using Transformer based LM}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.3]{completed_task/transformer_lm.png}
+	\caption{Next word prediction using Transformer based LM}
+	\label{fig:Next word prediction using Transformer based LM}
+\end{figure}
+
+\section{Context Based Spelling Correction}
+Noisy channel model is used for the development of spelling correction model. The channel model is trained based on Brill and Moore model using unsupervised data from corpus. The transformer based language model is used to deterine the prior function. The candidate sentences is found using minimum edit distance based on following equation. Then the word that maximizes the channel model and prior is chosen.
+
+\begin{equation}
+    \hat{w} = \arg \max_{w \in C} P(x | w) P (w)
+\end{equation}
+
+here, P(x $|$ w) = channel model and P(w) = prior
+
+\section{Backend}
+We have developed backend using Django and Django Rest Framework. For the API testing, Postman was used. 
+
+
+
+
+
+
