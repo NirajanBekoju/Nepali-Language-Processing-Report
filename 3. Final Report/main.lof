@@ -58,8 +58,6 @@
 \contentsline {figure}{\numberline {11.16}{\ignorespaces Sentimental Bert Model Confusion Matrix}}{64}{figure.11.16}%
 \contentsline {figure}{\numberline {11.17}{\ignorespaces Sentimental Bert Model Classification Report}}{64}{figure.11.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12.1}{\ignorespaces Probabilistic language model frontend}}{65}{figure.12.1}%
-\contentsline {figure}{\numberline {12.2}{\ignorespaces Sentiment classification (negative) frontend}}{66}{figure.12.2}%
-\contentsline {figure}{\numberline {12.3}{\ignorespaces Sentiment classification (neutral) frontend}}{66}{figure.12.3}%
-\contentsline {figure}{\numberline {12.4}{\ignorespaces Word Embedding frontend}}{67}{figure.12.4}%
-\contentsline {figure}{\numberline {12.5}{\ignorespaces Word Embedding 2d plot frontend}}{67}{figure.12.5}%
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Transformer based LM Frontend}}{66}{figure.12.1}%
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Word Embedding 2d plot Frontend}}{66}{figure.12.2}%
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Word Embedding 3d plot Frontend}}{67}{figure.12.3}%
