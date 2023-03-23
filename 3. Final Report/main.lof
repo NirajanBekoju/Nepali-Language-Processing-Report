@@ -1,63 +1,66 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Nepali Word Cloud}}{9}{figure.1.1}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Nepali Text Generation}}{10}{figure.1.2}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Nepali Spelling Correction based on contextual meaning}}{10}{figure.1.3}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Nepali Word Cloud}}{10}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Nepali Text Generation}}{11}{figure.1.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Nepali Spelling Correction based on contextual meaning}}{11}{figure.1.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Direct Architecture of Probabilistic Language Model}}{12}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The Transformer - model architecture}}{13}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Scaled Dot-Product Attention}}{14}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Multi-Head Attention consists of attention layer running in paralle}}{15}{figure.2.4}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces System Use Case Diagram}}{21}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Word Embeddings Activity Diagram}}{22}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Sentiment Classification Activity Diagram}}{23}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Language model Activity Diagram}}{23}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Spelling Correction Activity Diagram}}{24}{figure.4.5}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Agile Development Methodology}}{25}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Trello}}{26}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Discord}}{26}{figure.5.3}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Direct Architecture of Probabilistic Language Model}}{13}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The Transformer - model architecture}}{14}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Scaled Dot-Product Attention}}{15}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Multi-Head Attention consists of attention layer running in paralle}}{16}{figure.2.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Word2Vec}}{29}{figure.7.1}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces CBOW Model}}{31}{figure.7.2}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Glove Model}}{32}{figure.7.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces System Use Case Diagram}}{22}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Word Embeddings Activity Diagram}}{23}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sentiment Classification Activity Diagram}}{24}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Language model Activity Diagram}}{24}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Spelling Correction Activity Diagram}}{25}{figure.4.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Language Model for Auto-complete}}{34}{figure.8.1}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Agile Development Methodology}}{26}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Trello}}{27}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Discord}}{27}{figure.5.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Recurrent Neural Networks}}{44}{figure.9.1}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces An unrolled recurrent neural networks}}{44}{figure.9.2}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Short Sequence in RNNs}}{45}{figure.9.3}%
-\contentsline {figure}{\numberline {9.4}{\ignorespaces Long Sequence in RNNs}}{45}{figure.9.4}%
-\contentsline {figure}{\numberline {9.5}{\ignorespaces The repeating module in a standard RNN contains a single layer.}}{46}{figure.9.5}%
-\contentsline {figure}{\numberline {9.6}{\ignorespaces The repeating module in an LSTM contains four interacting layers.}}{47}{figure.9.6}%
-\contentsline {figure}{\numberline {9.7}{\ignorespaces LSTM Cell}}{47}{figure.9.7}%
-\contentsline {figure}{\numberline {9.8}{\ignorespaces Bidirectional RNN}}{50}{figure.9.8}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Language Model for Auto-complete}}{28}{figure.6.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces 2d plot of word embeddings vectors}}{52}{figure.10.1}%
-\contentsline {figure}{\numberline {10.2}{\ignorespaces 3d plot of word embeddings vectors}}{53}{figure.10.2}%
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Next word prediction using Probabilistic LM}}{54}{figure.10.3}%
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Next word prediction using Transformer based LM}}{54}{figure.10.4}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Recurrent Neural Networks}}{38}{figure.7.1}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces An unrolled recurrent neural networks}}{38}{figure.7.2}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Short Sequence in RNNs}}{39}{figure.7.3}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Long Sequence in RNNs}}{39}{figure.7.4}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces The repeating module in a standard RNN contains a single layer.}}{40}{figure.7.5}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces The repeating module in an LSTM contains four interacting layers.}}{41}{figure.7.6}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces LSTM Cell}}{41}{figure.7.7}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Bidirectional RNN}}{44}{figure.7.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Sentimental Classification Dataset}}{56}{figure.11.1}%
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Kaggle Dataset Label Count plot}}{57}{figure.11.2}%
-\contentsline {figure}{\numberline {11.3}{\ignorespaces Combined Dataset Label Count plot}}{57}{figure.11.3}%
-\contentsline {figure}{\numberline {11.4}{\ignorespaces Length Series Count Plot : Length 10 seems to be appropriate for padding length from the plot.}}{58}{figure.11.4}%
-\contentsline {figure}{\numberline {11.5}{\ignorespaces Sentimental Model Version 1 Summary}}{58}{figure.11.5}%
-\contentsline {figure}{\numberline {11.6}{\ignorespaces Sentimental Model Version 1 Accuracy Curve}}{59}{figure.11.6}%
-\contentsline {figure}{\numberline {11.7}{\ignorespaces Sentimental Model Version 1 Loss Curve}}{59}{figure.11.7}%
-\contentsline {figure}{\numberline {11.8}{\ignorespaces Sentimental Model Version 1 Confusion Matrix}}{60}{figure.11.8}%
-\contentsline {figure}{\numberline {11.9}{\ignorespaces Sentimental Model Version 1 Classification Report}}{60}{figure.11.9}%
-\contentsline {figure}{\numberline {11.10}{\ignorespaces Sentimental Model Version 2 Summary}}{61}{figure.11.10}%
-\contentsline {figure}{\numberline {11.11}{\ignorespaces Sentimental Model Version 2 Accuracy Curve}}{61}{figure.11.11}%
-\contentsline {figure}{\numberline {11.12}{\ignorespaces Sentimental Model Version 2 Loss Curve}}{62}{figure.11.12}%
-\contentsline {figure}{\numberline {11.13}{\ignorespaces Sentimental Model Version 2 Confusion Matrix}}{62}{figure.11.13}%
-\contentsline {figure}{\numberline {11.14}{\ignorespaces Sentimental Model Version 2 Classification Report}}{62}{figure.11.14}%
-\contentsline {figure}{\numberline {11.15}{\ignorespaces Kaggle and HuggingFace Sentimental Data Count plot}}{63}{figure.11.15}%
-\contentsline {figure}{\numberline {11.16}{\ignorespaces Sentimental Bert Model Confusion Matrix}}{64}{figure.11.16}%
-\contentsline {figure}{\numberline {11.17}{\ignorespaces Sentimental Bert Model Classification Report}}{64}{figure.11.17}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 2d plot of word embeddings vectors}}{46}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces 3d plot of word embeddings vectors}}{47}{figure.8.2}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Next word prediction using Probabilistic LM}}{48}{figure.8.3}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Next word prediction using Transformer based LM}}{48}{figure.8.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12.1}{\ignorespaces Transformer based LM Frontend}}{66}{figure.12.1}%
-\contentsline {figure}{\numberline {12.2}{\ignorespaces Word Embedding 2d plot Frontend}}{66}{figure.12.2}%
-\contentsline {figure}{\numberline {12.3}{\ignorespaces Word Embedding 3d plot Frontend}}{67}{figure.12.3}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Sentimental Classification Dataset}}{50}{figure.9.1}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Kaggle Dataset Label Count plot}}{51}{figure.9.2}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Combined Dataset Label Count plot}}{51}{figure.9.3}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Length Series Count Plot : Length 10 seems to be appropriate for padding length from the plot.}}{52}{figure.9.4}%
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Sentimental Model Version 1 Summary}}{52}{figure.9.5}%
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Sentimental Model Version 1 Accuracy Curve}}{53}{figure.9.6}%
+\contentsline {figure}{\numberline {9.7}{\ignorespaces Sentimental Model Version 1 Loss Curve}}{53}{figure.9.7}%
+\contentsline {figure}{\numberline {9.8}{\ignorespaces Sentimental Model Version 1 Confusion Matrix}}{54}{figure.9.8}%
+\contentsline {figure}{\numberline {9.9}{\ignorespaces Sentimental Model Version 1 Classification Report}}{54}{figure.9.9}%
+\contentsline {figure}{\numberline {9.10}{\ignorespaces Sentimental Model Version 2 Summary}}{55}{figure.9.10}%
+\contentsline {figure}{\numberline {9.11}{\ignorespaces Sentimental Model Version 2 Accuracy Curve}}{55}{figure.9.11}%
+\contentsline {figure}{\numberline {9.12}{\ignorespaces Sentimental Model Version 2 Loss Curve}}{56}{figure.9.12}%
+\contentsline {figure}{\numberline {9.13}{\ignorespaces Sentimental Model Version 2 Confusion Matrix}}{56}{figure.9.13}%
+\contentsline {figure}{\numberline {9.14}{\ignorespaces Sentimental Model Version 2 Classification Report}}{56}{figure.9.14}%
+\contentsline {figure}{\numberline {9.15}{\ignorespaces Kaggle and HuggingFace Sentimental Data Count plot}}{57}{figure.9.15}%
+\contentsline {figure}{\numberline {9.16}{\ignorespaces Sentimental Bert Model Confusion Matrix}}{58}{figure.9.16}%
+\contentsline {figure}{\numberline {9.17}{\ignorespaces Sentimental Bert Model Classification Report}}{58}{figure.9.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Homepage Light Mode}}{60}{figure.10.1}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Transformer based LM Frontend}}{60}{figure.10.2}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Proabilistic Language Model Frontend}}{61}{figure.10.3}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Positive Sentiment Prediction}}{62}{figure.10.4}%
+\contentsline {figure}{\numberline {10.5}{\ignorespaces Negative Sentiment Prediction}}{62}{figure.10.5}%
+\contentsline {figure}{\numberline {10.6}{\ignorespaces Neutral Sentiment Prediction}}{63}{figure.10.6}%
+\contentsline {figure}{\numberline {10.7}{\ignorespaces Word Embedding 2d plot Frontend}}{63}{figure.10.7}%
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Word Embedding 3d plot Frontend}}{64}{figure.10.8}%
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Auto Spelling Correction}}{64}{figure.10.9}%
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Manual Spelling Correction}}{65}{figure.10.10}%
+\addvspace {10\p@ }

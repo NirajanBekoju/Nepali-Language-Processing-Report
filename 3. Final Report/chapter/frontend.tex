@@ -3,12 +3,12 @@ The frontend was made using React JS. In our frontend,we have separate interface
 
 Our default mode is light mode and default interface/page is home page. 
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[scale = 0.35]{frontend/home_light.png}
-%     \caption{Homepage Light Mode}
-%     \label{fig: Homepage Light Mode}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.25]{frontend/home_frontend.png}
+    \caption{Homepage Light Mode}
+    \label{fig: Homepage Light Mode}
+\end{figure}
 
 
 % \begin{figure}[H]
@@ -27,23 +27,39 @@ We can navigate to transformer through navbar which provides you with an interfa
     \label{fig: Transformer based LM Frontend}
 \end{figure}
 
-Likewise, We can navigate to Probable words through navbar which provides you with an interface that lets you input text in text field where you can directly type just after navigating to it through navbar.  The request is sent to the API of our backend and the response is displayed as shown in the figure below. Now just as before, enter the text you like and  press the button. The request is then sent to the API of our backend. Based on the response, the probabilty if the next 5 possible text with their probabilty are shown in the table along with their visualization with the help of progress bar.
+Likewise, we can navigate to Probable words through navbar which provides you with an interface that lets you input text in text field where you can directly type just after navigating to it through navbar.  The request is sent to the API of our backend and the response is displayed as shown in the figure below. Now just as before, enter the text you like and  press the button. The request is then sent to the API of our backend. Based on the response, the probabilty if the next 5 possible text with their probabilty are shown in the table along with their visualization with the help of progress bar.
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[scale = 0.35]{frontend/probabilistic_frontend.png}
-%     \caption{Proabilistic LM Frontend}
-%     \label{fig: Proabilistic LM Frontend}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.3]{frontend/probabilistic_frontend.png}
+    \caption{Proabilistic Language Model Frontend}
+    \label{fig: Proabilistic LM Frontend}
+\end{figure}
 
 Similarly, you will get another interface after navigating to sentiment anlysis. The sentiment type of given text is displayed after you click the button along with the probabilty of its sentiments with progress bar.
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[scale = 0.35]{frontend/sentimental_frontend.png}
-%     \caption{Sentimental Classifier Frontend}
-%     \label{fig: Sentimental Classifier Frontend}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.3]{frontend/positive_sentiment.png}
+    \caption{Positive Sentiment Prediction}
+    \label{fig: Positive Sentiment Prediction}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.3]{frontend/negative_sentiment.png}
+    \caption{Negative Sentiment Prediction}
+    \label{fig: Negative Sentiment Prediction}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.3]{frontend/neutral_sentiment.png}
+    \caption{Neutral Sentiment Prediction}
+    \label{fig: Neutral Sentiment Prediction}
+\end{figure}
+
+
 
 In word embeddings you can either choose to see 2d or 3d word embeddings visualization graph just by clicking buttons. The 2d graph is made using the canvs.js graphing library and 3d graph is made using plotly.js library.
 
@@ -59,4 +75,20 @@ In word embeddings you can either choose to see 2d or 3d word embeddings visuali
     \includegraphics[scale = 0.35]{frontend/word_embedding_3d.png}
     \caption{Word Embedding 3d plot Frontend}
     \label{fig: Word Embedding 3d plot Frontend}
+\end{figure}
+
+In spell checker, we can get auto corrected output of the given text. In addition to that, we can also manually correct the text  based on the choices provided. By manually choosing the choices provided for each text, the spelling correction is more likely to be accurate. Below is the screenshot for spelling correction.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.25]{frontend/kn_model.png}
+    \caption{Auto Spelling Correction}
+    \label{fig: Auto Spelling Correction}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.25]{frontend/manual_correction.png}
+    \caption{Manual Spelling Correction}
+    \label{fig: Manual Spelling Correction}
 \end{figure}
