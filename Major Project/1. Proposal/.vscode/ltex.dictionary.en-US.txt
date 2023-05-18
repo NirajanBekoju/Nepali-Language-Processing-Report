@@ -1,0 +1,6 @@
+LSTMs
+MFCC
+Cepstral
+Softmax
+softmax
+nepali
